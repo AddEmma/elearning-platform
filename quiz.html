@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
+	<title>Quiz on Addae's site</title>
+	<link rel="stylesheet" type="text/css" href="quizStyle.css">
+	<script type="text/javascript" src="../script.js"></script>
+</head>
+<body>
+	
+<!-- NAVIGATION -->
+	<header>
+		<div class="nav" id="nav">
+			<div id="learned-logo">
+			<a href="../index.html"><img src="addemma.jpg" style="width: 120px;"></a></div>
+			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+			<ul id="list-switch">
+				<li><a href="jee.html"><img src="../images/courses/d1.png" class="icon">Advance Preparation</a></li>
+				<!-- <li><a href="gate.html"><img src="../images/courses/paper.png" class="icon">GATE Preparation</a></li> -->
+				<li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Maths courses</a></li>
+				<!-- <li><a href="computer_courses.html#data"><img src="../images/courses/data.png" class="icon">Data Structures</a></li> -->
+				<!-- <li><a href="computer_courses.html#algo"><img src="../images/courses/algo.png" class="icon">Algorithm</a></li> -->
+				<li><a href="computer_courses.html#projects"><img src="../images/courses/projects.png" class="icon">Doubt</a></li>
+			</ul>
+			<div class="search" id="search-switch">
+				<input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img src="../images/icon/search.png"></button>
+			</div>
+		</div>
+	</header>
+	
+
+<!-- MAIN Heading of Page -->
+	<div class="title" id="title">
+		<span>Daily Quiz on Addae's E-Learning Platform</span>
+		<div class="shortdesc"><br>
+			<p>If you think education is expensive, try ignorance</p>
+		</div>
+		<button onclick="startquiz()">Start Now</button>
+	</div>
+
+
+<div class="panel" id="panel">
+	
+	<div class="left-side" id="left">
+		<ul> <br>
+			<li onclick="quizt(1)">HOME</li>
+			<!-- <li onclick="quizt(2)">JEE Mains</li>
+			<li onclick="quizt(3)">JEE Advanced</li>
+			<li onclick="quizt(4)">GATE</li> -->
+			<li onclick="quizt(5)">Integral Calculus</li>
+			<li onclick="quizt(6)">Linear Algebra</li>
+			<li onclick="quizt(7)">Statistical Methods</li>
+			<li onclick="quizt(8)">Differential Calculus</li>
+			<li onclick="quizt(9)">Differential Equation</li>
+			<li onclick="quizt(10)">Matrices & Linear Transformation</li>
+			<li onclick="quizt(11)">Interview Questions</li>
+		</ul>
+	</div>
+
+	<div class="right-side" id="right">
+		<div id="quiz-container">
+			
+			<div id="f1"><div class="quiz-frame main-frame"></div></div>
+
+			<!-- <div id="f2"><iframe class="quiz-frame" src="" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div> -->
+			
+			<!-- <div id="f3"><iframe class="quiz-frame" src="" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div> -->
+			
+			<!-- <div id="f4"><iframe class="quiz-frame" src="" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div> -->
+
+			<div id="f5"><iframe class="quiz-frame" src="https://www.bing.com/ck/a?!&&p=1dfce0646f441541JmltdHM9MTY5MjgzNTIwMCZpZ3VpZD0wMjA1MjAwNC0yZGIyLTZiOWYtMzMxNy0zMjZjMmNkNTZhYTUmaW5zaWQ9NTIwMw&ptn=3&hsh=3&fclid=02052004-2db2-6b9f-3317-326c2cd56aa5&psq=url+for+quiz&u=a1aHR0cHM6Ly93d3cucXVpei1tYWtlci5jb20v&ntb=1"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></iframe></div>
+			
+			<div id="f6"><iframe class="quiz-frame" src="https://www.bing.com/ck/a?!&&p=1dfce0646f441541JmltdHM9MTY5MjgzNTIwMCZpZ3VpZD0wMjA1MjAwNC0yZGIyLTZiOWYtMzMxNy0zMjZjMmNkNTZhYTUmaW5zaWQ9NTIwMw&ptn=3&hsh=3&fclid=02052004-2db2-6b9f-3317-326c2cd56aa5&psq=url+for+quiz&u=a1aHR0cHM6Ly93d3cucXVpei1tYWtlci5jb20v&ntb=1" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f7"><iframe class="quiz-frame" src="https://www.bing.com/ck/a?!&&p=1dfce0646f441541JmltdHM9MTY5MjgzNTIwMCZpZ3VpZD0wMjA1MjAwNC0yZGIyLTZiOWYtMzMxNy0zMjZjMmNkNTZhYTUmaW5zaWQ9NTIwMw&ptn=3&hsh=3&fclid=02052004-2db2-6b9f-3317-326c2cd56aa5&psq=url+for+quiz&u=a1aHR0cHM6Ly93d3cucXVpei1tYWtlci5jb20v&ntb=1" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f8"><iframe class="quiz-frame" src="https://www.bing.com/ck/a?!&&p=1dfce0646f441541JmltdHM9MTY5MjgzNTIwMCZpZ3VpZD0wMjA1MjAwNC0yZGIyLTZiOWYtMzMxNy0zMjZjMmNkNTZhYTUmaW5zaWQ9NTIwMw&ptn=3&hsh=3&fclid=02052004-2db2-6b9f-3317-326c2cd56aa5&psq=url+for+quiz&u=a1aHR0cHM6Ly93d3cucXVpei1tYWtlci5jb20v&ntb=1" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f9"><iframe class="quiz-frame" src="https://www.bing.com/ck/a?!&&p=1dfce0646f441541JmltdHM9MTY5MjgzNTIwMCZpZ3VpZD0wMjA1MjAwNC0yZGIyLTZiOWYtMzMxNy0zMjZjMmNkNTZhYTUmaW5zaWQ9NTIwMw&ptn=3&hsh=3&fclid=02052004-2db2-6b9f-3317-326c2cd56aa5&psq=url+for+quiz&u=a1aHR0cHM6Ly93d3cucXVpei1tYWtlci5jb20v&ntb=1" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f10"><iframe class="quiz-frame" src="https://www.bing.com/ck/a?!&&p=1dfce0646f441541JmltdHM9MTY5MjgzNTIwMCZpZ3VpZD0wMjA1MjAwNC0yZGIyLTZiOWYtMzMxNy0zMjZjMmNkNTZhYTUmaW5zaWQ9NTIwMw&ptn=3&hsh=3&fclid=02052004-2db2-6b9f-3317-326c2cd56aa5&psq=url+for+quiz&u=a1aHR0cHM6Ly93d3cucXVpei1tYWtlci5jb20v&ntb=1" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f11"><iframe class="quiz-frame" src="https://www.glassdoor.com/Job/index.htm" frameborder="0" marginheiclass="quiz-frame" ght="0" marginwidth="0">Loading…</iframe></div>
+
+		</div>
+	</div>
+
+</div>
+
+	<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
